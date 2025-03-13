@@ -1,31 +1,73 @@
 @extends('layouts.app')
 
-@section('title', 'Home - MyApp')
+@section('title', 'About - MyApp')
 
 @section('content')
-   <div class="card">
-        <div class="card-header">
-        <h3><center>Tentang Saya</center></h3>
-        </div>
-
-        <div class="card-body">
-            <h5 class="text-center">Perjalanan Saya</h5>
-
-            <p>Perjalanan saya di usia 16 tahun ini sudah banyak memberi pengalaman dan pelajaran yang berharga. Meskipun masih terbilang muda, saya merasa setiap langkah yang saya ambil sudah membawa saya ke banyak tempat yang luar biasa.
-            Sejak kecil, saya selalu penasaran dengan hal-hal baru, baik itu hobi, tempat, atau orang-orang yang saya temui. Semua itu membuat saya terus belajar untuk menjadi pribadi yang lebih baik.</p>
-            <p>Tentu saja, perjalanan saya nggak selalu mulus. Di usia saya yang masih muda, banyak tantangan yang datang, baik itu masalah di sekolah, hubungan dengan teman-teman, atau kadang rasa bingung soal masa depan.
-            Tapi saya percaya bahwa setiap masalah punya solusinya, dan setiap kegagalan itu cuma bagian dari perjalanan untuk menjadi lebih kuat dan lebih bijak.</p>
-            <p>Perjalanan saya masih panjang dan saya excited banget dengan apa yang akan datang. Walaupun belum tahu semua yang ada di depan, saya siap menghadapi semuanya dengan semangat dan tekad yang kuat.
-            Saya percaya, semakin banyak saya mencoba dan belajar, semakin banyak hal indah yang bisa saya capai di masa depan.</p>
-        </div>
-        <div class="mb-5">
-            <h5 class="text-center">Hubungi Saya</h5>
-            <p class="text-center">
-            Jika Anda memiliki pertanyaan, saran, atau ingin berbicara lebih lanjut, jangan ragu untuk menghubungi saya! 
-            </p>
-            <div class="text-center">
-            <a href="{{ route('contact')}}" class="btn btn-primary btn-lg">Hubungi Kami</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Tentang Saya</h1>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Visi &amp; Misi</h2>
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-2">Visi</h3>
+                    <p class="mb-4">Menjadi individu yang cerdas, kreatif, dan berdampak positif bagi masyarakat melalui pendidikan, pengembangan diri, dan kontribusi dalam berbagai bidang yang saya minati, baik itu akademik maupun sosial.</p>
+                    <h3 class="text-xl font-semibold mb-2">Misi</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Membantu Masyarakat </li>
+                        <li>Mengembangkan Keterampilan</li>
+                        <li>Memberikan dampak positif</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
+                    <img src="https://placehold.co/150x150" alt="Visi dan Misi" class="rounded" width="150" height="150">
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Sejarah Saya</h2>
+            <p>Sejak kecil, saya selalu percaya bahwa pendidikan adalah kunci untuk membuka banyak peluang, dan saya berusaha semaksimal mungkin untuk terus belajar dan berkembang. Saya juga membantu saya dalam mengembangkan kemampuan sosial dan kepemimpinan. Ke depan, saya ingin terus berkembang dan mempersiapkan diri untuk menghadapi tantangan masa depan dengan lebih baik, baik dalam dunia pendidikan maupun kehidupan secara umum.</p>
+        </section>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Tim Saya</h2>
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="md:w-1/3 flex flex-col items-center mb-4 md:mb-0">
+                    <img src="https://placehold.co/100x100" alt="John Doe" class="rounded-full mb-2" width="100" height="100">
+                    <h3 class="text-lg font-semibold">John Doe</h3>
+                    <p>Founder &amp; CEO</p>
+                </div>
+                <div class="md:w-1/3 flex flex-col items-center mb-4 md:mb-0">
+                    <img src="https://placehold.co/100x100" alt="Jane Smith" class="rounded-full mb-2" width="100" height="100">
+                    <h3 class="text-lg font-semibold">Jane Smith</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="md:w-1/3 flex flex-col items-center">
+                    <img src="https://placehold.co/100x100" alt="Mike Johnson" class="rounded-full mb-2" width="100" height="100">
+                    <h3 class="text-lg font-semibold">Mike Johnson</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+            </div>
+        </section>
+        <section>
+        <center><h2 class="text-2xl font-semibold mb-4">Hubungi Kami</h2></center>
+        </section>
+            <p class="text-center">
+                <p><center>
+                Jika Anda memiliki pertanyaan, saran, atau ingin berbicara lebih lanjut, jangan ragu untuk menghubungi saya!</p></center>
+                <ul style="list-style-type: none"><center>
+                <li> Email: <a href="ameliachasanah320@gmail.com">ameliachasanah320@gmail</a></li>
+                <li> No telp: <a href="0857425514">0857425514</a></li>
+                <li> Alamat: Demak, Jawa Tengah, Indonesia</li>
+            </ul></center>
     </div>
+</body>
+</html>
 @endsection
