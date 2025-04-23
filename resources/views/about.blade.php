@@ -33,7 +33,7 @@
             </div>
         </section>
         <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Sejarah Saya</h2>
+            <h2 class="text-2xl font-semibold mb-4">Perjalanan Saya</h2>
             <p>Sejak kecil, saya selalu percaya bahwa pendidikan adalah kunci untuk membuka banyak peluang, dan saya berusaha semaksimal mungkin untuk terus belajar dan berkembang. Saya juga membantu saya dalam mengembangkan kemampuan sosial dan kepemimpinan. Ke depan, saya ingin terus berkembang dan mempersiapkan diri untuk menghadapi tantangan masa depan dengan lebih baik, baik dalam dunia pendidikan maupun kehidupan secara umum.</p>
         </section>
         
